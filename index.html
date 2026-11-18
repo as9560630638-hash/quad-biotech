@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quad Biotech | Leading Softgel Capsule Manufacturer India</title>
+  <meta name="description" content="WHO-GMP, US-FDA approved softgel capsule manufacturer in Gharaunda, Haryana. 600+ formulations, 20+ export countries, 1500+ satisfied clients.">
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:; media-src 'self'; connect-src 'self' https://formsubmit.co; form-action 'self' https://formsubmit.co; frame-ancestors 'none'; base-uri 'self'; object-src 'none';">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha384-/o6I2CkkWC//PSjvWC/eYN7l3xM3tJm8ZzVkCOfp//W05QcE3mlGskpoHB6XqI+B" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+
+<canvas id="ptc"></canvas>
+
+<!-- Mouse-repelling ambient orbs (translated via JS) -->
+<div class="repel-orb repel-orb-1" id="orb0"></div>
+<div class="repel-orb repel-orb-2" id="orb1"></div>
+<div class="repel-orb repel-orb-3" id="orb2"></div>
+<div class="repel-orb repel-orb-4" id="orb3"></div>
+
+<!-- ── FLOATING SIDEBAR — circular buttons ────────────────── -->
+<aside class="f-bar">
+  <a href="tel:+918091920250" class="f-btn f-ph1" data-tip="+91-8091920250"><i class="fas fa-phone"></i></a>
+  <a href="tel:+919991119367" class="f-btn f-ph2" data-tip="+91-9991119367"><i class="fas fa-mobile-screen"></i></a>
+  <a href="tel:+919896265464" class="f-btn f-ph3" data-tip="+91-9896265464"><i class="fas fa-phone-volume"></i></a>
+  <a href="https://wa.me/918091920250" target="_blank" rel="noopener noreferrer" class="f-btn f-wa" data-tip="WhatsApp Us"><i class="fab fa-whatsapp"></i></a>
+  <a href="assets/CAPSOFT-BROSCHURE-1.pdf" download class="f-btn f-dl" data-tip="Download Brochure"><i class="fas fa-file-pdf"></i></a>
+</aside>
+
+<button class="f-enq" onclick="openModal()">
+  <i class="fas fa-envelope"></i> Enquire With Us
+</button>
+
+<!-- ── TOP BAR ──────────────────────────────────────────── -->
+<div class="topbar">
+  <div class="wrap">
+    <div><i class="fas fa-location-dot" style="color:var(--mint-mid);margin-right:5px"></i>Gharaunda, Haryana | ISO 9001:2015, WHO-GMP &amp; US-FDA Approved Facility</div>
+    <div>
+      <i class="fas fa-phone" style="color:var(--mint-mid);margin-right:4px"></i>
+      <a href="tel:+918091920250">+91-8091920250</a> &nbsp;|&nbsp;
+      <a href="tel:+919896265464">+91-9896265464</a>&emsp;
+      <i class="fas fa-envelope" style="color:var(--mint-mid);margin-right:4px"></i>
+      <a href="mailto:Capsoftmd1611@gmail.com">Capsoftmd1611@gmail.com</a>
+    </div>
+  </div>
+</div>
+
+<!-- ── NAVBAR ───────────────────────────────────────────── -->
+<header class="nav" id="navbar">
+  <div class="nav__in">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/img/quad-biotech-logo.png" alt="Quad Biotech">
+      <div>
+        <div class="brand-name">Quad</div>
+        <div class="brand-sub">Biotech</div>
+      </div>
+    </a>
+
+    <nav class="nav-menu" id="navMenu">
+      <div class="ni"><a href="index.html" class="nl act">Home</a></div>
+      <div class="ni">
+        <a href="#about" class="nl">Company <span class="caret">▾</span></a>
+        <div class="dd">
+          <a href="#about">About Us</a>
+          <a href="#values">Why Choose Us</a>
+          <a href="#facilities">Infrastructure</a>
+          <a href="#quality">Quality &amp; Certification</a>
+        </div>
+      </div>
+      <div class="ni"><a href="softgel.html" class="nl">About Softgel</a></div>
+      <div class="ni">
+        <a href="#" class="nl">Our Expertise <span class="caret">▾</span></a>
+        <div class="dd">
+          <a href="softgel.html#manufacturing">Softgel Manufacturing</a>
+          <a href="softgel.html#shapes">Innovative Packaging</a>
+          <a href="#bioactive">New Launch</a>
+        </div>
+      </div>
+      <div class="ni">
+        <a href="#" class="nl">Product &amp; Services <span class="caret">▾</span></a>
+        <div class="dd">
+          <a href="assets/CAPSOFT-BROSCHURE-1.pdf" target="_blank" rel="noopener noreferrer">Drug Approval</a>
+          <a href="#bioactive">Branded Bioactive</a>
+          <a href="#facilities">Export</a>
+        </div>
+      </div>
+      <div class="ni">
+        <a href="#contact" class="nl">Reach Us <span class="caret">▾</span></a>
+        <div class="dd">
+          <a href="#contact">Careers</a>
+          <a href="#welcome-seo">Blog</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+
+    <button class="nav-cta" onclick="openModal()">Get Quote</button>
+    <button class="ham" id="ham"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============================================================
+     HERO — split layout matching reference
+     ============================================================ -->
+<section class="hero" id="home">
+  <div class="blobs">
+    <div class="blob blob--m" style="opacity:.3"></div>
+    <div class="blob blob--p" style="opacity:.18"></div>
+    <div class="blob blob--ms"></div>
+  </div>
+
+  <div class="hero__left">
+    <div class="wrap">
+      <div class="hero-eyebrow rv">
+        <span class="hero-stars">★★★★★</span>
+        Leading Softgel Manufacturer
+      </div>
+      <h1 class="hero-h rv d1">
+        Innovate &amp;<br>enhance your
+        <span class="serif-line">pharma products</span>
+      </h1>
+      <div class="hero-rule rv d2"></div>
+      <p class="hero-lead rv d2">
+        Custom formulations for pharmaceutical and nutraceutical brands — delivered with precision, speed, and rigorous quality control.
+      </p>
+      <div class="hero-btns rv d3">
+        <a href="#about" class="btn btn--ghost-white">About us</a>
+        <button class="btn btn--fill" onclick="openModal()">Request Formulation →</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__right">
+    <div class="orbit-system rv d2">
+      <!-- Orbit rings -->
+      <div class="orbit-ring or-3"></div>
+      <div class="orbit-ring or-2"></div>
+      <div class="orbit-ring or-1"></div>
+      <!-- Center circular image -->
+      <div class="orbit-frame">
+        <img src="assets/img/GetPaidStock.com-66596f5de4cb3.jpg" alt="Softgel Amber Capsules">
+      </div>
+      <!-- Floating stat chips -->
+      <div class="stat-chip sc-1">
+        <i class="fas fa-flask stat-chip__icon"></i> 600+ Formulas
+      </div>
+      <div class="stat-chip sc-2">
+        <i class="fas fa-microscope stat-chip__icon"></i> In-House Lab
+      </div>
+      <!-- Draggable badge -->
+      <div class="drag-badge" id="dragBadge">
+        <div class="drag-badge__title"><i class="fas fa-shield-check" style="margin-right:6px"></i>GMP Certified</div>
+        <div class="drag-badge__label">Drag</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll-down chevron -->
+  <a href="#about" class="scroll-down" aria-label="Scroll to about section"></a>
+</section>
+
+<!-- ============================================================
+     §3 ABOUT COMPANY
+     ============================================================ -->
+<section class="sec about-sec" id="about">
+  <div class="blobs">
+    <div class="blob blob--m"></div>
+  </div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <span class="tag tag--mint rv">About Company</span>
+    <h2 class="h2 rv d1" style="color:var(--text-on-light);max-width:700px">Welcome to Quad Biotech Pvt. Ltd</h2>
+    <p class="about-lead rv d2">
+      Quad Biotech Pvt. Ltd is recognized as one of the leading <strong>Softgel manufacturers in India</strong>, trusted for delivering high-quality and reliable softgel solutions for pharmaceutical, nutraceutical, and wellness brands. As a top <strong>Softgel manufacturer in India</strong>, we focus on innovation, precision, and consistent quality to help you improve your medical and nutraceutical product offerings. With a state of the art facility and strict quality control systems, we stand out as a trusted <strong>Softgel manufacturing company in India</strong>, ensuring every capsule is formulated with accuracy, stability, and high bioavailability.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     §4 VALUES — Hybrid 3D + Blob cards (lovely-dragon-72 × smart-liger-5)
+     ============================================================ -->
+<section class="sec sec--dark" id="values">
+  <div class="blobs">
+    <div class="blob blob--m" style="opacity:.2"></div>
+    <div class="blob blob--p" style="opacity:.12"></div>
+  </div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <span class="tag tag--glass rv">Our Values</span>
+    <h2 class="h2 h--white rv d1" style="color:#fff;max-width:600px">Core principles<br><span class="serif-em grad-text">shaping our excellence</span></h2>
+    <div class="vals-grid" style="margin-top:48px">
+
+      <!-- Card 1 — Mint: Larger Production Capacity -->
+      <div class="sl-wrap rv d1">
+        <div class="sl-card">
+          <div class="sl-circles">
+            <span class="sl-c sl-c1"></span>
+            <span class="sl-c sl-c2"></span>
+            <span class="sl-c sl-c3"></span>
+            <span class="sl-c sl-c4"></span>
+            <span class="sl-c sl-c5"><img src="assets/img/8.png" alt="Production"></span>
+          </div>
+          <div class="sl-glass"></div>
+          <div class="sl-content">
+            <span class="sl-title">Larger Production Capacity</span>
+            <span class="sl-desc">1 billion+ capsules annually with precision encapsulation lines.</span>
+          </div>
+          <div class="sl-bottom">
+            <span class="sl-num">01</span>
+            <button class="sl-cta" onclick="openModal()">Enquire →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 — Peach: In-House Micro Lab -->
+      <div class="sl-wrap rv d2">
+        <div class="sl-card sl-card--peach">
+          <div class="sl-circles">
+            <span class="sl-c sl-c1"></span>
+            <span class="sl-c sl-c2"></span>
+            <span class="sl-c sl-c3"></span>
+            <span class="sl-c sl-c4"></span>
+            <span class="sl-c sl-c5"><img src="assets/img/9.png" alt="Lab"></span>
+          </div>
+          <div class="sl-glass"></div>
+          <div class="sl-content">
+            <span class="sl-title">In-House Micro Lab</span>
+            <span class="sl-desc">Largest insulated lab delivering faster, accurate test results.</span>
+          </div>
+          <div class="sl-bottom">
+            <span class="sl-num">02</span>
+            <button class="sl-cta" onclick="openModal()">Enquire →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 — Mint: Reliable Operations -->
+      <div class="sl-wrap rv d3">
+        <div class="sl-card">
+          <div class="sl-circles">
+            <span class="sl-c sl-c1"></span>
+            <span class="sl-c sl-c2"></span>
+            <span class="sl-c sl-c3"></span>
+            <span class="sl-c sl-c4"></span>
+            <span class="sl-c sl-c5"><img src="assets/img/10.png" alt="Operations"></span>
+          </div>
+          <div class="sl-glass"></div>
+          <div class="sl-content">
+            <span class="sl-title">Reliable Operations</span>
+            <span class="sl-desc">Process equipment fulfilling function under specified conditions.</span>
+          </div>
+          <div class="sl-bottom">
+            <span class="sl-num">03</span>
+            <button class="sl-cta" onclick="openModal()">Enquire →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 — Peach: Advanced Machineries -->
+      <div class="sl-wrap rv d4">
+        <div class="sl-card sl-card--peach">
+          <div class="sl-circles">
+            <span class="sl-c sl-c1"></span>
+            <span class="sl-c sl-c2"></span>
+            <span class="sl-c sl-c3"></span>
+            <span class="sl-c sl-c4"></span>
+            <span class="sl-c sl-c5"><img src="assets/img/7.png" alt="Machinery"></span>
+          </div>
+          <div class="sl-glass"></div>
+          <div class="sl-content">
+            <span class="sl-title">Advanced Machineries</span>
+            <span class="sl-desc">IoT-based state-of-the-art systems for error-free production.</span>
+          </div>
+          <div class="sl-bottom">
+            <span class="sl-num">04</span>
+            <button class="sl-cta" onclick="openModal()">Enquire →</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     §5 VIDEO + ADVANTAGES + ISO element
+     ============================================================ -->
+<section class="sec vid-sec" id="encapsulation">
+  <div class="blobs">
+    <div class="blob blob--ms"></div>
+    <div class="blob blob--p" style="opacity:.12"></div>
+  </div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <div class="vid-grid">
+      <div class="rv">
+        <p class="vid-sub">Softgel Encapsulation Technology</p>
+        <h3 class="vid-head">How to Make Softgel Capsule.</h3>
+        <div class="vid-wrap" style="margin-bottom:0">
+          <video controls preload="metadata">
+            <source src="assets/media_20240706_141652_1084543874792769357.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="rv d2">
+        <span class="tag tag--glass" style="margin-top:0">About Softgel</span>
+        <h2 class="h2" style="color:#fff;margin-bottom:12px">Advantages of Soft Gelatin Capsules<br><span class="serif-em" style="color:var(--mint-light)">You Must Know</span></h2>
+        <p style="font-size:.92rem;color:rgba(255,255,255,.55);line-height:1.78;margin-bottom:0">
+          Soft gelatin capsules enclose liquid or semisolid medication in hermetically sealed gelatin shells — giving them unique pharmaceutical advantages.
+        </p>
+        <div class="adv-grid">
+          <div class="adv-item">Better bioavailability</div>
+          <div class="adv-item">Easy to swallow &amp; digest</div>
+          <div class="adv-item">No unpleasant odor or taste</div>
+          <div class="adv-item">No GI effect</div>
+          <div class="adv-item">Dose uniformity &amp; API stability</div>
+          <div class="adv-item">Hermetically sealed</div>
+          <div class="adv-item">Higher perceived value</div>
+          <div class="adv-item">Variety in colors &amp; shapes</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     §6 BIOACTIVE — enhanced 3D sphere cards (smart-liger-5)
+     ============================================================ -->
+<section class="sec sec--darker" id="bioactive">
+  <div class="blobs">
+    <div class="blob blob--m" style="opacity:.18"></div>
+    <div class="blob blob--p" style="opacity:.14"></div>
+  </div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <span class="tag tag--glass rv">Softgel Expertise</span>
+    <h2 class="h2 rv d1" style="color:#fff">Patented &amp; Branded Bioactive<br><span class="serif-em grad-text">Ingredients that make us different</span></h2>
+    <div class="bio-grid" style="margin-top:48px">
+
+      <!-- Ubiquinol -->
+      <div class="c3d-par rv d1"><div class="c3d">
+        <img class="c3d__imgbg" src="assets/img/Cap1.jpg" alt="Ubiquinol">
+        <div class="c3d__rings">
+          <span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span><span class="ring r4"></span>
+          <span class="ring r5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>
+        </div>
+        <div class="c3d__txt">
+          <div class="c3d__badge">Patented Bioactive</div>
+          <div class="c3d__name">Ubiquinol</div>
+          <div class="c3d__sub">Reduced CoEnzyme Q10</div>
+          <div class="c3d__acts">
+            <button class="act-btn" onclick="openModal('Ubiquinol')" aria-label="Details"><i class="fas fa-search"></i></button>
+            <button class="act-btn" onclick="window.open('assets/CAPSOFT-BROSCHURE-1.pdf')" aria-label="Brochure"><i class="fas fa-file-pdf"></i></button>
+            <button class="act-btn" onclick="openModal('Ubiquinol')" aria-label="Enquire"><i class="fas fa-envelope"></i></button>
+          </div>
+        </div>
+      </div></div>
+
+      <!-- Tocotrienol -->
+      <div class="c3d-par rv d2"><div class="c3d">
+        <img class="c3d__imgbg" src="assets/img/cap-2.jpg" alt="Tocotrienol">
+        <div class="c3d__rings">
+          <span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span><span class="ring r4"></span>
+          <span class="ring r5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>
+        </div>
+        <div class="c3d__txt">
+          <div class="c3d__badge">Patented Bioactive</div>
+          <div class="c3d__name">Tocotrienol</div>
+          <div class="c3d__sub">Vitamin E</div>
+          <div class="c3d__acts">
+            <button class="act-btn" onclick="openModal('Tocotrienol')" aria-label="Details"><i class="fas fa-search"></i></button>
+            <button class="act-btn" onclick="window.open('assets/CAPSOFT-BROSCHURE-1.pdf')" aria-label="Brochure"><i class="fas fa-file-pdf"></i></button>
+            <button class="act-btn" onclick="openModal('Tocotrienol')" aria-label="Enquire"><i class="fas fa-envelope"></i></button>
+          </div>
+        </div>
+      </div></div>
+
+      <!-- Superba -->
+      <div class="c3d-par rv d3"><div class="c3d">
+        <img class="c3d__imgbg" src="assets/img/cap3.jpg" alt="Superba">
+        <div class="c3d__rings">
+          <span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span><span class="ring r4"></span>
+          <span class="ring r5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>
+        </div>
+        <div class="c3d__txt">
+          <div class="c3d__badge">Patented Bioactive</div>
+          <div class="c3d__name">Superba</div>
+          <div class="c3d__sub">Krill Oil</div>
+          <div class="c3d__acts">
+            <button class="act-btn" onclick="openModal('Superba Krill Oil')" aria-label="Details"><i class="fas fa-search"></i></button>
+            <button class="act-btn" onclick="window.open('assets/CAPSOFT-BROSCHURE-1.pdf')" aria-label="Brochure"><i class="fas fa-file-pdf"></i></button>
+            <button class="act-btn" onclick="openModal('Superba Krill Oil')" aria-label="Enquire"><i class="fas fa-envelope"></i></button>
+          </div>
+        </div>
+      </div></div>
+
+      <!-- SETRIA -->
+      <div class="c3d-par rv d1"><div class="c3d">
+        <img class="c3d__imgbg" src="assets/img/cap4.jpg" alt="SETRIA">
+        <div class="c3d__rings">
+          <span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span><span class="ring r4"></span>
+          <span class="ring r5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>
+        </div>
+        <div class="c3d__txt">
+          <div class="c3d__badge">Patented Bioactive</div>
+          <div class="c3d__name">SETRIA</div>
+          <div class="c3d__sub">L-Glutathione</div>
+          <div class="c3d__acts">
+            <button class="act-btn" onclick="openModal('SETRIA')" aria-label="Details"><i class="fas fa-search"></i></button>
+            <button class="act-btn" onclick="window.open('assets/CAPSOFT-BROSCHURE-1.pdf')" aria-label="Brochure"><i class="fas fa-file-pdf"></i></button>
+            <button class="act-btn" onclick="openModal('SETRIA')" aria-label="Enquire"><i class="fas fa-envelope"></i></button>
+          </div>
+        </div>
+      </div></div>
+
+      <!-- Mibelle -->
+      <div class="c3d-par rv d2"><div class="c3d">
+        <img class="c3d__imgbg" src="assets/img/cap5.jpg" alt="Mibelle">
+        <div class="c3d__rings">
+          <span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span><span class="ring r4"></span>
+          <span class="ring r5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>
+        </div>
+        <div class="c3d__txt">
+          <div class="c3d__badge">Patented Bioactive</div>
+          <div class="c3d__name">Mibelle</div>
+          <div class="c3d__sub">Anagain</div>
+          <div class="c3d__acts">
+            <button class="act-btn" onclick="openModal('Mibelle Anagain')" aria-label="Details"><i class="fas fa-search"></i></button>
+            <button class="act-btn" onclick="window.open('assets/CAPSOFT-BROSCHURE-1.pdf')" aria-label="Brochure"><i class="fas fa-file-pdf"></i></button>
+            <button class="act-btn" onclick="openModal('Mibelle Anagain')" aria-label="Enquire"><i class="fas fa-envelope"></i></button>
+          </div>
+        </div>
+      </div></div>
+
+      <!-- Liposomal -->
+      <div class="c3d-par rv d3"><div class="c3d">
+        <img class="c3d__imgbg" src="assets/img/cap-6.jpg" alt="Liposomal">
+        <div class="c3d__rings">
+          <span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span><span class="ring r4"></span>
+          <span class="ring r5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>
+        </div>
+        <div class="c3d__txt">
+          <div class="c3d__badge">Patented Bioactive</div>
+          <div class="c3d__name">Liposomal</div>
+          <div class="c3d__sub">Iron</div>
+          <div class="c3d__acts">
+            <button class="act-btn" onclick="openModal('Liposomal Iron')" aria-label="Details"><i class="fas fa-search"></i></button>
+            <button class="act-btn" onclick="window.open('assets/CAPSOFT-BROSCHURE-1.pdf')" aria-label="Brochure"><i class="fas fa-file-pdf"></i></button>
+            <button class="act-btn" onclick="openModal('Liposomal Iron')" aria-label="Enquire"><i class="fas fa-envelope"></i></button>
+          </div>
+        </div>
+      </div></div>
+
+    </div>
+    <div class="bio-cta rv">
+      <a href="softgel.html" class="btn btn--mint" style="font-size:1rem;padding:16px 36px">Explore All Softgels →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     §7 FACILITIES
+     ============================================================ -->
+<section class="sec fac-sec" id="facilities">
+  <div class="blobs">
+    <div class="blob blob--m" style="opacity:.22"></div>
+    <div class="blob blob--ms"></div>
+  </div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <span class="tag tag--glass rv">Our Facilities</span>
+    <h2 class="h2 rv d1" style="color:#fff">Facility designed for<br><span class="serif-em grad-text">Premium Quality Manufacturing</span></h2>
+    <p class="lead lead--white rv d2" style="margin-bottom:52px">Our GMP-compliant, state-of-the-art facility engineered for precision and efficiency in Softgel production.</p>
+
+    <div class="stats-row">
+      <div class="stat rv d1"><div class="stat__n" data-count="600" data-suffix="+">600+</div><div class="stat__l">Product Permissions in Drug Formulation</div></div>
+      <div class="stat rv d2"><div class="stat__n" data-count="40" data-suffix="+">40+</div><div class="stat__l">Branded Bioactive &amp; Patented Ingredients</div></div>
+      <div class="stat rv d3"><div class="stat__n" data-count="20" data-suffix="+">20+</div><div class="stat__l">Export Countries</div></div>
+      <div class="stat rv d4"><div class="stat__n" data-count="1500" data-suffix="+">1500+</div><div class="stat__l">Satisfied Customers Across India</div></div>
+    </div>
+
+    <div class="cflow rv">
+      <img class="cf-img" src="assets/img/softgel-encapsulation-machines-1.jpg" alt="Encapsulation Machines">
+      <img class="cf-img c" src="assets/img/enc-machine.jpg" alt="Encapsulation Plant">
+      <img class="cf-img" src="assets/img/drying-tunnels.jpg" alt="Drying Tunnels">
+    </div>
+
+    <div class="fac-cta rv">
+      <a href="softgel.html#shapes" class="btn btn--ghost-white">Explore the Facility →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     §8 THERAPEUTIC AREAS
+     ============================================================ -->
+<section class="sec sec--dark" id="therapeutic">
+  <div class="blobs">
+    <div class="blob blob--p" style="opacity:.15"></div>
+    <div class="blob blob--m" style="opacity:.12"></div>
+  </div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <span class="tag tag--glass rv">Therapeutic Areas</span>
+    <h2 class="h2 rv d1" style="color:#fff">Comprehensive Softgel<br><span class="serif-em grad-text">Formulations</span></h2>
+    <p class="lead lead--white rv d2" style="margin-bottom:0">Tailored solutions across critical human health domains.</p>
+    <div class="pills-wrap">
+      <button class="t-pill rv d1" onclick="openModal('Bone Health')">Bone Health</button>
+      <button class="t-pill rv d2" onclick="openModal('Infertility')">Infertility</button>
+      <button class="t-pill rv d3" onclick="openModal('General Health')">General Health</button>
+      <button class="t-pill rv d1" onclick="openModal('Women\'s Health')">Women's Health</button>
+      <button class="t-pill rv d2" onclick="openModal('Eye Care')">Eye Care</button>
+      <button class="t-pill rv d3" onclick="openModal('Anti Oxidants')">Anti Oxidants</button>
+      <button class="t-pill rv d1" onclick="openModal('Anti Aging')">Anti Aging</button>
+      <button class="t-pill rv d2" onclick="openModal('Diabetic Care')">Diabetic Care</button>
+      <button class="t-pill rv d3" onclick="openModal('Fertility')">Fertility</button>
+      <button class="t-pill rv d1" onclick="openModal('Mental Development')">Mental Development</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     §9 QUALITY
+     ============================================================ -->
+<section class="sec qual-sec" id="quality">
+  <div class="blobs">
+    <div class="blob blob--m" style="opacity:.16"></div>
+    <div class="blob blob--p" style="opacity:.12"></div>
+  </div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <span class="tag tag--glass rv">Compliance &amp; Standards</span>
+    <h2 class="h2 rv d1" style="color:#fff">Our Quality<br><span class="serif-em grad-text">Commitment</span></h2>
+    <div class="qual-grid" style="margin-top:48px">
+      <div class="qcard rv d1"><span class="qi"><i class="fas fa-certificate"></i></span><div class="qt">ISO 9001:2008 Certified</div><p class="qd">Committed to high quality products. We have earned trust and respect in the pharmaceutical market.</p></div>
+      <div class="qcard rv d2"><span class="qi"><i class="fas fa-microscope"></i></span><div class="qt">Our Quality Approach</div><p class="qd">We formulate all our medicines as per set quality norms, following stringent manufacturing protocols.</p></div>
+      <div class="qcard rv d3"><span class="qi"><i class="fas fa-users"></i></span><div class="qt">Dedicated Workforce</div><p class="qd">Diverse team creating a comprehensive, high-performance culture affecting our business outcomes.</p></div>
+      <div class="qcard rv d1"><span class="qi"><i class="fas fa-handshake"></i></span><div class="qt">Ethics and Compliance</div><p class="qd">Policies designed to ensure legal, ethical, and responsible business conduct across our partnerships.</p></div>
+      <div class="qcard rv d2"><span class="qi"><i class="fas fa-trophy"></i></span><div class="qt">Awards &amp; Achievements</div><p class="qd">Numerous distinguished awards for formulating medicines per industrial norms over the years.</p></div>
+      <div class="qcard rv d3"><span class="qi"><i class="fas fa-box"></i></span><div class="qt">Packing</div><p class="qd">Proven techniques ensuring leakage &amp; breakage-proof delivery for all pharmaceutical products.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     §10 PRODUCT RANGE
+     ============================================================ -->
+<section class="sec prod-sec" id="products">
+  <div class="blobs"><div class="blob blob--ms"></div></div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <span class="tag tag--glass rv">Our Product Range</span>
+    <h2 class="h2 rv d1" style="color:#fff">Softgel for<br><span class="serif-em grad-text">Various Segments</span></h2>
+    <div class="marquee-wrap rv d2" style="margin-top:28px">
+      <div class="marquee-track" id="prodTrack">
+        <div class="pcard"><img src="assets/img/14.jpg" alt="Eye Care"><div class="pcard__l">Eye Care, Vision Health</div></div>
+        <div class="pcard"><img src="assets/img/12.jpg" alt="Prostatic"><div class="pcard__l">Prostatic</div></div>
+        <div class="pcard"><img src="assets/img/16.jpg" alt="Flaxseed"><div class="pcard__l">Flaxseed Oil</div></div>
+        <div class="pcard"><img src="assets/img/5-1.jpg" alt="Osteoporosis"><div class="pcard__l">Osteoporosis</div></div>
+        <div class="pcard"><img src="assets/img/19.jpg" alt="UTI"><div class="pcard__l">Softgel for UTI</div></div>
+        <div class="pcard"><img src="assets/img/10.jpg" alt="Derma"><div class="pcard__l">Derma: Hair, Skin &amp; Nails</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     §11 DIRECTOR (weak-lionfish-37 glassmorphic profile)
+     ============================================================ -->
+<section class="sec sec--dark" id="director">
+  <div class="blobs">
+    <div class="blob blob--p" style="opacity:.14;right:-50px;left:auto;bottom:-40px;top:auto"></div>
+    <div class="blob blob--m" style="opacity:.12"></div>
+  </div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <div class="dir-grid">
+      <div class="rv">
+        <div class="spc">
+          <div class="spc__av"><img src="assets/img/sachin.jpeg" alt="Director"></div>
+          <div class="spc__name">Sachin Kumar</div>
+          <div class="spc__role">Director, Quad Biotech</div>
+          <div class="spc__tags">
+            <span class="ptag">Pharma Innovator</span>
+            <span class="ptag">WHO-GMP Auditor</span>
+            <span class="ptag">Quality Lead</span>
+          </div>
+        </div>
+      </div>
+      <div class="dir-txt rv d2">
+        <span class="tag tag--glass" style="margin-bottom:16px">Leadership Vision</span>
+        <h2 class="h2" style="color:#fff;margin-bottom:20px">Director's<br><span class="serif-em grad-text">Message</span></h2>
+        <p class="mp">As we navigate through the dynamic landscape of the pharmaceutical industry, I wanted to take a moment to express my gratitude for your unwavering dedication and hard work. Together, we have achieved remarkable milestones and overcome numerous challenges.</p>
+        <p class="mp">Our company has always been at the forefront of innovation, driven by a relentless pursuit of excellence. We have consistently strived to develop groundbreaking pharmaceutical products that improve the lives of millions around the world.</p>
+        <p class="mp">As we move forward, we must remain mindful of the ever-evolving nature of our field. The healthcare landscape is rapidly changing, influenced by scientific advancements, emerging technologies, and evolving customer expectations.</p>
+        <div class="signoff">Warm regards,<strong>Director, Quad Biotech</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     §12 GOOGLE REVIEWS
+     ============================================================ -->
+<section class="sec sec--mid" id="reviews">
+  <div class="blobs"><div class="blob blob--m" style="opacity:.16"></div></div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <span class="tag tag--glass rv">Customer Reviews</span>
+    <h2 class="h2 rv d1" style="color:#fff;margin-bottom:40px">What Our Clients<br><span class="serif-em grad-text">Say About Us</span></h2>
+    <div class="rev-grid">
+      <div class="rev-sum rv">
+        <div class="rev-g"><i class="fas fa-building"></i></div>
+        <div class="rev-biz">Quad Biotech Pvt. Ltd.</div>
+        <div class="rev-stars">★★★★½</div>
+        <div class="rev-ct">11 Google reviews</div>
+        <button class="rev-write" onclick="openModal('Write a Review')">Write a review</button>
+      </div>
+      <div class="rev-cards">
+        <div class="rcard rv d1">
+          <div class="rcard__hd"><div class="rav" style="background:#e07a4b">S</div><div><div class="rname">Sohrab Ali</div><div class="rstars">★★★★☆</div></div></div>
+          <p class="rtext">"Very poor service. Employee are non responsive. Zulesma pharma"</p>
+        </div>
+        <div class="rcard rv d2">
+          <div class="rcard__hd"><div class="rav" style="background:#2196f3">A</div><div><div class="rname">Arjun Singh</div><div class="rstars">★★★★★</div></div></div>
+          <p class="rtext">"Awesome ..."</p>
+        </div>
+        <div class="rcard rv d3">
+          <div class="rcard__hd"><div class="rav" style="background:#2a7a68">S</div><div><div class="rname">SAUMITRA SIRCAR</div><div class="rstars">★★★★★</div></div></div>
+          <p class="rtext">"Best"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     §13 SEO CONTENT
+     ============================================================ -->
+<section class="sec seo-sec" id="welcome-seo">
+  <div class="wrap">
+    <div class="rv">
+      <h2 class="seo-h">Welcome to Quad Biotech Pvt. Ltd. – Leading Softgel Capsule Manufacturer in India</h2>
+      <p class="seo-p">When it comes to reliable pharmaceutical manufacturing, <strong>Quad Biotech Pvt. Ltd</strong> stands tall as a <strong>leading soft gel manufacturer in Gharaunda</strong>. With a commitment to innovation, high-quality formulations, and state-of-the-art infrastructure, Quad Biotech has become a trusted partner for pharmaceutical companies across the nation and beyond.</p>
+      <h3 class="seo-h2">Soft Gel Manufacturing Expertise</h3>
+      <div class="seo-list">
+        <div class="seo-li"><strong>Nutraceutical Softgels</strong> – Omega-3, Multivitamins, Antioxidants, etc.</div>
+        <div class="seo-li"><strong>Herbal Softgels</strong> – Ayurvedic formulations, Herbal extracts, Immunity boosters.</div>
+        <div class="seo-li"><strong>Pharmaceutical Softgels</strong> – Pain management, Cardiac care, Gastrointestinal, Anti-inflammatory, and more.</div>
+        <div class="seo-li"><strong>Specialized Formulations</strong> – Customized solutions based on client requirements.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     §14 CERTIFICATIONS
+     ============================================================ -->
+<section class="sec cert-sec" id="certifications">
+  <div class="blobs"><div class="blob blob--m" style="opacity:.14"></div></div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <span class="tag tag--glass rv">Our Certifications</span>
+    <h2 class="h2 rv d1" style="color:#fff;margin-bottom:40px">Globally Recognized<br><span class="serif-em grad-text">Quality Standards</span></h2>
+    <div class="certs-row">
+      <div class="cbadge rv d1"><img src="assets/img/i1.png" alt="ISO"></div>
+      <div class="cbadge rv d2"><img src="assets/img/i2.png" alt="WHO-GMP"></div>
+      <div class="cbadge rv d3"><img src="assets/img/i3.png" alt="GLP"></div>
+      <div class="cbadge rv d1"><img src="assets/img/i4.png" alt="FDA"></div>
+      <div class="cbadge rv d2"><img src="assets/img/i5.png" alt="HACCP"></div>
+      <div class="cbadge rv d3"><img src="assets/img/i6.png" alt="MSME"></div>
+      <div class="cbadge rv d1"><img src="assets/img/i7.png" alt="FSSAI"></div>
+      <div class="cbadge rv d2"><img src="assets/img/i8.png" alt="GMP"></div>
+      <div class="cbadge rv d3"><img src="assets/img/i9.png" alt="CGMP"></div>
+      <div class="cbadge rv d1"><img src="assets/img/i10.png" alt="Make in India"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     §15 FOOTER (bitter-eagle-34 Quick Reach in col 4)
+     ============================================================ -->
+<footer class="footer" id="contact">
+  <div class="blobs"><div class="blob blob--m" style="opacity:.08"></div></div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <div class="footer-g">
+      <div class="fc fc-brand">
+        <img src="assets/img/quad-biotech-logo.png" alt="Quad Biotech">
+        <p>Quad Biotech Pvt. Ltd is the best softgel capsule manufacturer in India. Known for exceptional work, we create high-end soft gel capsules combining innovation and quality.</p>
+      </div>
+      <div class="fc">
+        <h4>Contact Us</h4>
+        <form class="fc-form" onsubmit="return handleFooterForm(event)" action="https://formsubmit.co/Capsoftmd1611@gmail.com" method="POST">
+          <input type="text" name="Name" placeholder="Name*" required>
+          <input type="text" name="Company" placeholder="Company Name">
+          <input type="email" name="Email" placeholder="Email*" required>
+          <input type="tel" name="Phone" placeholder="Telephone*" required>
+          <textarea name="Inquiry" placeholder="Inquiry"></textarea>
+          <input type="hidden" name="_subject" value="Footer contact — Quad Biotech website">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <button type="submit" class="sbtn">Send Message</button>
+        </form>
+      </div>
+      <div class="fc">
+        <h4>Quick Links</h4>
+        <div class="fc-links">
+          <a href="index.html">→ Home</a>
+          <a href="#about">→ About Us</a>
+          <a href="softgel.html">→ Softgel Manufacturing</a>
+          <a href="#bioactive">→ Branded Bioactive</a>
+          <a href="#contact">→ Careers</a>
+          <a href="#welcome-seo">→ Blogs</a>
+          <a href="#contact">→ Contact Us</a>
+        </div>
+      </div>
+      <div class="fc fc-addr">
+        <h4>Our Address</h4>
+        <p><strong>Quad Biotech</strong>Shop no. 16, Ward no. 7, near Tulsidass Petrol Pump, Gharaunda, Haryana, India</p>
+        <div class="fc-contacts">
+          <a href="mailto:Capsoftmd1611@gmail.com"><i class="fas fa-envelope" style="width:14px;color:var(--mint-mid)"></i> Capsoftmd1611@gmail.com</a>
+          <a href="tel:+918091920250"><i class="fas fa-phone" style="width:14px;color:var(--mint-mid)"></i> +91-8091920250</a>
+          <a href="tel:+919991119367"><i class="fas fa-mobile-screen" style="width:14px;color:var(--mint-mid)"></i> +91-9991119367</a>
+          <a href="tel:+919896265464"><i class="fas fa-phone-volume" style="width:14px;color:var(--mint-mid)"></i> +91-9896265464</a>
+        </div>
+        <div class="fc-soc" style="margin-bottom:0">
+          <a href="#" class="sp">f</a>
+          <a href="#" class="sp">in</a>
+          <a href="#" class="sp">P</a>
+        </div>
+        <!-- bitter-eagle-34 Quick Reach Card -->
+        <div class="qrc">
+          <div class="qrc__hd"><span class="pdot"></span>Quick Reach</div>
+          <div class="qrc-g">
+            <a href="tel:+918091920250" class="sbox bc"><span class="si"><i class="fas fa-phone"></i></span><span class="sl">+91-8091920250</span></a>
+            <a href="tel:+919991119367" class="sbox bm"><span class="si"><i class="fas fa-mobile-screen"></i></span><span class="sl">+91-9991119367</span></a>
+            <a href="https://wa.me/918091920250" target="_blank" rel="noopener noreferrer" class="sbox bw"><span class="si"><i class="fab fa-whatsapp"></i></span><span class="sl">WhatsApp</span></a>
+            <a href="mailto:Capsoftmd1611@gmail.com" class="sbox be"><span class="si"><i class="fas fa-envelope"></i></span><span class="sl">Email Us</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bar">© 2024 All Rights Reserved, Quad Biotech Pvt. Ltd | Developed by The Design Infotech</div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-bg" id="modalBg">
+  <div class="modal">
+    <button class="mcl" onclick="closeModal()" aria-label="Close"><i class="fas fa-xmark"></i></button>
+    <div class="mt">Get in Touch</div>
+    <div class="ms">Our team will respond within 24 hours.</div>
+    <form class="mform" onsubmit="return handleEnquiry(event)" action="https://formsubmit.co/Capsoftmd1611@gmail.com" method="POST">
+      <input type="text" name="Name" placeholder="Your Name*" required>
+      <input type="email" name="Email" placeholder="Email Address*" required>
+      <input type="tel" name="Phone" placeholder="Phone Number*" required>
+      <input type="text" name="Company" placeholder="Company Name">
+      <input type="text" id="modalInterest" name="Interest" placeholder="Interest / Product">
+      <select name="Requirement">
+        <option value="">Select Requirement</option>
+        <option>Softgel Manufacturing</option>
+        <option>Branded Bioactive</option>
+        <option>Export Inquiry</option>
+        <option>Custom Formulation</option>
+        <option>General Inquiry</option>
+      </select>
+      <textarea name="Message" placeholder="Your Message"></textarea>
+      <input type="hidden" name="_subject" value="New Enquiry — Quad Biotech website">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <button type="submit" class="msub">Send Enquiry →</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

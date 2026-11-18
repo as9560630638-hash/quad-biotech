@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Softgel | Quad Biotech Pvt. Ltd</title>
+  <meta name="description" content="Learn about softgel capsules — shapes, sizes, advantages, product portfolio, and ingredients. Quad Biotech, WHO-GMP certified manufacturer in Gharaunda.">
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:; media-src 'self'; connect-src 'self' https://formsubmit.co; form-action 'self' https://formsubmit.co; frame-ancestors 'none'; base-uri 'self'; object-src 'none';">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha384-/o6I2CkkWC//PSjvWC/eYN7l3xM3tJm8ZzVkCOfp//W05QcE3mlGskpoHB6XqI+B" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="icon" type="image/png" href="assets/img/quad-biotech-logo.png">
+</head>
+<body>
+
+<canvas id="ptc"></canvas>
+
+<!-- ── FLOATING SIDEBAR ─────────────────────────────────── -->
+<aside class="f-bar">
+  <a href="tel:+918091920250" class="f-btn f-ph1" data-tip="+91-8091920250"><i class="fas fa-phone"></i></a>
+  <a href="tel:+919991119367" class="f-btn f-ph2" data-tip="+91-9991119367"><i class="fas fa-mobile-screen"></i></a>
+  <a href="tel:+919896265464" class="f-btn f-ph3" data-tip="+91-9896265464"><i class="fas fa-phone-volume"></i></a>
+  <a href="https://wa.me/918091920250" target="_blank" rel="noopener noreferrer" class="f-btn f-wa" data-tip="WhatsApp Us"><i class="fab fa-whatsapp"></i></a>
+  <a href="assets/CAPSOFT-BROSCHURE-1.pdf" download class="f-btn f-dl" data-tip="Download Brochure"><i class="fas fa-file-pdf"></i></a>
+</aside>
+<button class="f-enq" onclick="openModal()"><i class="fas fa-envelope"></i> Enquire With Us</button>
+
+<!-- ── TOP BAR ──────────────────────────────────────────── -->
+<div class="topbar">
+  <div class="wrap">
+    <div><i class="fas fa-location-dot" style="color:var(--mint-mid);margin-right:5px"></i>Gharaunda, Haryana, India &nbsp;|&nbsp; ISO 9001:2015, WHO-GMP &amp; US-FDA Approved</div>
+    <div>
+      <i class="fas fa-phone" style="color:var(--mint-mid);margin-right:4px"></i>
+      <a href="tel:+918091920250">+91-8091920250</a> &nbsp;|&nbsp;
+      <a href="tel:+919896265464">+91-9896265464</a>&emsp;
+      <i class="fas fa-envelope" style="color:var(--mint-mid);margin-right:4px"></i>
+      <a href="mailto:Capsoftmd1611@gmail.com">Capsoftmd1611@gmail.com</a>
+    </div>
+  </div>
+</div>
+
+<!-- ── NAVBAR ───────────────────────────────────────────── -->
+<header class="nav" id="navbar">
+  <div class="nav__in">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/img/quad-biotech-logo.png" alt="Quad Biotech Logo">
+      <div class="nav-brand-text">
+        <div class="brand-name">Quad</div>
+        <div class="brand-sub">Biotech</div>
+      </div>
+    </a>
+
+    <nav class="nav-menu" id="navMenu">
+      <div class="ni"><a href="index.html" class="nl">Home</a></div>
+      <div class="ni">
+        <a href="index.html#about" class="nl">Company <span class="caret">▾</span></a>
+        <div class="dd">
+          <a href="index.html#about">About Us</a>
+          <a href="index.html#values">Why Choose Us</a>
+          <a href="index.html#facilities">Infrastructure</a>
+          <a href="index.html#quality">Quality &amp; Certification</a>
+        </div>
+      </div>
+      <div class="ni"><a href="softgel.html" class="nl act">About Softgel</a></div>
+      <div class="ni">
+        <a href="#" class="nl">Our Expertise <span class="caret">▾</span></a>
+        <div class="dd">
+          <a href="#manufacturing">Softgel Manufacturing</a>
+          <a href="#shapes">Innovative Packaging</a>
+          <a href="index.html#bioactive">New Launch</a>
+        </div>
+      </div>
+      <div class="ni">
+        <a href="#" class="nl">Product &amp; Services <span class="caret">▾</span></a>
+        <div class="dd">
+          <a href="assets/CAPSOFT-BROSCHURE-1.pdf" target="_blank" rel="noopener noreferrer">Drug Approval</a>
+          <a href="index.html#bioactive">Branded Bioactive</a>
+          <a href="index.html#facilities">Export</a>
+        </div>
+      </div>
+      <div class="ni">
+        <a href="index.html#contact" class="nl">Reach Us <span class="caret">▾</span></a>
+        <div class="dd">
+          <a href="index.html#contact">Careers</a>
+          <a href="index.html#welcome-seo">Blog</a>
+          <a href="index.html#contact">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+
+    <button class="nav-cta" onclick="openModal()">Get Quote</button>
+    <button class="ham" id="ham"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============================================================
+     §1 INNER HERO + BREADCRUMB
+     ============================================================ -->
+<section class="inner-hero">
+  <div class="ih-bg" style="background-image:url('assets/img/GetPaidStock.com-66596f5de4cb3.jpg')"></div>
+  <div class="ih-ov"></div>
+  <div class="blobs" style="z-index:2">
+    <div class="blob blob--m" style="opacity:.18"></div>
+    <div class="blob blob--p" style="opacity:.14"></div>
+  </div>
+  <div class="wrap ih-ct">
+    <div class="bc rv">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span>About Softgel</span>
+    </div>
+    <h1 class="ih-title rv d1">
+      About <span class="grad-text">Softgel</span> Capsules
+    </h1>
+    <p class="rv d2" style="font-size:1.05rem;color:rgba(255,255,255,.65);max-width:560px;line-height:1.72;margin-bottom:28px">
+      Everything you need to know about softgel capsule technology — shapes, advantages, and our complete product portfolio.
+    </p>
+    <div class="rv d3" style="display:flex;gap:12px;flex-wrap:wrap">
+      <a href="#manufacturing" class="btn btn--fill">Explore Technology</a>
+      <a href="#ingredients" class="btn btn--ghost-white">View Ingredients</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     §2 WHAT ARE SOFTGEL CAPSULES
+     ============================================================ -->
+<section class="sec sec--dark" id="manufacturing">
+  <div class="blobs"><div class="blob blob--ms"></div></div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <div class="sg-2col">
+      <div class="rv">
+        <span class="tag tag--glass">Encapsulation Science</span>
+        <h2 class="h2" style="color:#fff;margin-bottom:16px">What are<br><span class="grad-text">Softgel Capsules?</span></h2>
+        <p style="font-size:.97rem;line-height:1.82;color:rgba(255,255,255,.62);margin-bottom:20px">
+          Softgels are ideal for liquid or semisolid fills, making them highly suitable for the delivery of oil-based formulations. Softgel capsules are translucent capsules with liquid or semi-liquid solutions hermetically sealed within gelatin shells.
+        </p>
+        <div class="sg-bullets">
+          <div class="sgb">Fully customisable shape and size to fit your formulation needs</div>
+          <div class="sgb">Enhanced bioavailability — ingredients absorb faster &amp; more completely</div>
+          <div class="sgb">Accommodates liquids, semi-liquids, suspensions, and emulsions</div>
+          <div class="sgb">Easy to swallow — no water required for most formulations</div>
+          <div class="sgb">Airtight hermetic seal that is tamper-evident and oxidation-resistant</div>
+        </div>
+      </div>
+      <div class="rv d2">
+        <img src="assets/img/GetPaidStock.com-66596f5de4cb3.jpg" alt="Softgel Capsules">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     §3 SHAPES & SIZES
+     ============================================================ -->
+<section class="sec sec--mid" id="shapes">
+  <div class="blobs">
+    <div class="blob blob--m" style="opacity:.2"></div>
+    <div class="blob blob--p" style="opacity:.22"></div>
+  </div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <span class="tag tag--glass rv">Shapes &amp; Dimensions</span>
+    <h2 class="h2 rv d1" style="color:#fff;max-width:700px;margin-bottom:14px">
+      Softgel Types for<br><span class="grad-text">Every Requirement</span>
+    </h2>
+    <p class="rv d2" style="font-size:.97rem;line-height:1.75;color:rgba(255,255,255,.58);max-width:680px;margin-bottom:32px">
+      With these ideas and moral ethics in mind, we at Quad Biotech bring multiple types of softgel capsules according to the need of the consumer.
+    </p>
+
+    <div class="sg-bullets rv d3" style="max-width:720px;margin-bottom:40px">
+      <div class="sgb"><strong style="color:var(--mint-light)">Round softgel capsules</strong> — Spherical dosage form for concentrated liquid doses</div>
+      <div class="sgb"><strong style="color:var(--mint-light)">Oval softgel capsules</strong> — The most popular streamlined shape for ease of swallowing</div>
+      <div class="sgb"><strong style="color:var(--mint-light)">Tube shaped softgel capsules</strong> — Extended elongation for topical twist-off or oral application</div>
+      <div class="sgb"><strong style="color:var(--mint-light)">Oblong softgel capsules</strong> — Maximum volume capacity for multi-ingredient and high-payload oils</div>
+      <div class="sgb"><strong style="color:var(--mint-light)">Suppository Softgel Capsule</strong> — Specialized targeted dissolution for rectal/vaginal delivery</div>
+    </div>
+
+    <div class="chart-wrap rv d4">
+      <img src="assets/img/Screenshot-2024-05-30-165053.jpg" alt="Softgel Shapes &amp; Sizes Chart">
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     §4 WHY USE SOFTGEL CAPSULES
+     ============================================================ -->
+<section class="sec sec--darker" id="why-softgel">
+  <div class="blobs">
+    <div class="blob blob--m" style="opacity:.15;right:-80px;left:auto;top:auto;bottom:-80px"></div>
+    <div class="blob blob--p" style="opacity:.1"></div>
+  </div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <span class="tag tag--glass rv">Key Advantages</span>
+    <h2 class="h2 rv d1" style="color:#fff;margin-bottom:40px">
+      Why Choose<br><span class="grad-text">Soft Gelatin Capsules</span>
+    </h2>
+
+    <div class="qual-grid">
+      <div class="qcard rv d1">
+        <span class="qi"><i class="fas fa-capsules"></i></span>
+        <div class="qt">Enhanced Bioavailability</div>
+        <div class="qd">Softgels disintegrate rapidly and significantly improve the absorption of active ingredients compared to tablets and hard capsules.</div>
+      </div>
+      <div class="qcard rv d2">
+        <span class="qi"><i class="fas fa-lock"></i></span>
+        <div class="qt">Tamper-Evident Sealing</div>
+        <div class="qd">Hermetic seals protect active ingredients from oxidation, moisture, and microbial contamination — problems are visible through leakage or discoloration.</div>
+      </div>
+      <div class="qcard rv d3">
+        <span class="qi"><i class="fas fa-palette"></i></span>
+        <div class="qt">Versatile &amp; Customisable</div>
+        <div class="qd">Wide variety of shell colors, shapes, and sizes available for product differentiation. Fill can be semi-solid, liquid, gel, paste, or emulsion.</div>
+      </div>
+      <div class="qcard rv d1">
+        <span class="qi"><i class="fas fa-flask"></i></span>
+        <div class="qt">Precision &amp; Consistency</div>
+        <div class="qd">Provides greater stability, purity, and uniformity of nutrients encapsulated — ensuring every dose delivers exactly what's promised.</div>
+      </div>
+      <div class="qcard rv d2">
+        <span class="qi"><i class="fas fa-leaf"></i></span>
+        <div class="qt">Easy to Swallow</div>
+        <div class="qd">Smooth exterior and reduced odor make softgels the preferred choice for patients of all ages, improving compliance and adherence.</div>
+      </div>
+      <div class="qcard rv d3">
+        <span class="qi"><i class="fas fa-user-doctor"></i></span>
+        <div class="qt">Clinically Preferred</div>
+        <div class="qd">Health professionals administer drugs in softgel form because they offer wide advantages over conventional medicines — faster onset, better tolerability.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     §5 PRODUCT PORTFOLIO
+     ============================================================ -->
+<section class="sec port-sec" id="portfolio">
+  <div class="blobs">
+    <div class="blob blob--m" style="opacity:.14"></div>
+    <div class="blob blob--p" style="opacity:.12"></div>
+  </div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <span class="tag tag--glass rv">Therapeutic Portfolio</span>
+    <h2 class="h2 rv d1" style="color:#fff;margin-bottom:16px">
+      Product Portfolio in<br><span class="grad-text">Softgel Capsules</span>
+    </h2>
+
+    <div class="port-banner rv d2">
+      <img src="assets/img/WhatsApp-Image-2024-05-23-at-1.10.38-PM.jpeg" alt="Softgels Product Range">
+    </div>
+
+    <p class="port-p rv d3">
+      Quad Biotech is committed to manufacturing the best quality softgel capsules using a State of the Art Pharmaceutical Manufacturing Facility confirming ISO 9001:2015 certified, GMP &amp; GLP Revised Schedule M &amp; adhering to WHO-GMP Norms. All our soft gel products are FSSAI certified and DCGI approved — reliable, safe, and effective.
+    </p>
+
+    <div class="port-tags rv d4">
+      <span class="ptg">Vitamins &amp; Minerals</span>
+      <span class="ptg">Antioxidants</span>
+      <span class="ptg">Nutritional Supplements</span>
+      <span class="ptg">Iron Supplements</span>
+      <span class="ptg">Women's Health</span>
+      <span class="ptg">Gynaecology</span>
+      <span class="ptg">Infertility &amp; Impotence</span>
+      <span class="ptg">Nephrology</span>
+      <span class="ptg">Prostatic</span>
+      <span class="ptg">UTI</span>
+      <span class="ptg">Joint Health</span>
+      <span class="ptg">Muscle Relaxant</span>
+      <span class="ptg">Bone Health</span>
+      <span class="ptg">Orthopedics</span>
+      <span class="ptg">Gastro &amp; Gut Health</span>
+      <span class="ptg">Digestive Enzymes</span>
+      <span class="ptg">Hepatoprotective</span>
+      <span class="ptg">Kidney &amp; Liver Health</span>
+      <span class="ptg">Memory &amp; Sleep</span>
+      <span class="ptg">Cardiovascular</span>
+      <span class="ptg">Diabetic</span>
+      <span class="ptg">Respiratory Health</span>
+      <span class="ptg">Neuropathic Pain</span>
+      <span class="ptg">Fish Oil</span>
+      <span class="ptg">Omega-3 Fatty Acid</span>
+      <span class="ptg">Flaxseed Oil</span>
+      <span class="ptg">Evening Primrose Oil</span>
+      <span class="ptg">Cod Liver Oil</span>
+      <span class="ptg">Tocotrienols</span>
+      <span class="ptg">Anemia</span>
+      <span class="ptg">Anti Cold</span>
+      <span class="ptg">Anti-Allergic</span>
+      <span class="ptg">Anti-Malarial</span>
+      <span class="ptg">Dengue</span>
+      <span class="ptg">Beauty: Hair, Skin &amp; Nails</span>
+      <span class="ptg">Eye Care &amp; Vision Health</span>
+      <span class="ptg">Immunosuppressive</span>
+    </div>
+
+    <div style="margin-top:36px;text-align:center" class="rv d5">
+      <button class="btn btn--fill" onclick="openModal('Softgel Manufacturing')">
+        <i class="fas fa-envelope" style="font-size:.85rem"></i> Request Product Catalogue
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     §6 SEARCHABLE INGREDIENTS TABLE
+     ============================================================ -->
+<section class="sec ing-sec" id="ingredients">
+  <div class="blobs">
+    <div class="blob blob--m" style="opacity:.12"></div>
+  </div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <span class="tag tag--glass rv">Active Formulations</span>
+    <h2 class="h2 rv d1" style="color:#fff;margin-bottom:16px">
+      Search by<br><span class="grad-text">Ingredient</span>
+    </h2>
+    <p class="rv d2" style="font-size:.93rem;color:rgba(255,255,255,.55);margin-bottom:28px">600+ active formulations across therapeutic categories — search by ingredient name below.</p>
+
+    <div class="tbl-ctrl rv d3">
+      <input type="text" class="tbl-inp" id="tblSearch" placeholder="Search ingredient (e.g. Ubiquinol, Omega-3...)" oninput="filterTable()">
+      <button class="tbl-sbtn" onclick="filterTable()">Search</button>
+    </div>
+    <div class="tbl-wrap rv d4">
+      <table class="ing-tbl" id="ingTable">
+        <thead>
+          <tr>
+            <th>Column A</th>
+            <th>Column B</th>
+            <th>Column C</th>
+            <th>Column D</th>
+            <th>Column E</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Anagain</td><td>Lycopene</td><td>Cyproheptadine Hcl</td><td>Ferrous Ascorbate</td><td>Devil's Claw Extract</td></tr>
+          <tr><td>Aquamin Calcium</td><td>Melatonin</td><td>Dextromethorphan Hbr</td><td>Ferrous Asparto Glycinate</td><td>D-Mannose Ext.</td></tr>
+          <tr><td>Calcium Fructoborate</td><td>Methylcobalamin</td><td>Diphenhydramine Hcl</td><td>Ferrous Bis Glycinate</td><td>Dunaliella Salina Ext.</td></tr>
+          <tr><td>Carnipure Tartrate</td><td>Mucopolysaccharides</td><td>Dutasteride</td><td>Ferrous Fumarate</td><td>Eyebright Herb</td></tr>
+          <tr><td>CissPure</td><td>N-Acetyl L-Cystine</td><td>Etoricoxib</td><td>Ferrous Sulphate</td><td>Fenugreek Extract</td></tr>
+          <tr><td>CoEnzyme Q10 (Ubiquinol)</td><td>L-Glutathione (SETRIA)</td><td>Krill Oil (Superba)</td><td>Tocotrienols (Vit E)</td><td>Astaxanthin</td></tr>
+          <tr><td>Ginseng Root Extract</td><td>Ginkgo Biloba Ext.</td><td>Evening Primrose Oil</td><td>Cod Liver Oil</td><td>Zinc Carnosine</td></tr>
+          <tr><td>Alpha Lipoic Acid</td><td>Omega-3 Fish Oil</td><td>Flaxseed Oil</td><td>Borage Oil</td><td>Black Seed Oil</td></tr>
+          <tr><td>Coenzyme Q10</td><td>Lutein</td><td>Zeaxanthin</td><td>Bilberry Extract</td><td>Grape Seed Extract</td></tr>
+          <tr><td>Resveratrol</td><td>Quercetin</td><td>Curcumin</td><td>Boswellia Extract</td><td>Saw Palmetto</td></tr>
+          <tr><td>Pumpkin Seed Oil</td><td>Evening Primrose</td><td>Vitamin D3</td><td>Vitamin K2</td><td>Vitamin E (Natural)</td></tr>
+          <tr><td>Betacarotene</td><td>Astaxanthin</td><td>Spirulina</td><td>Chlorella</td><td>Wheat Germ Oil</td></tr>
+          <tr><td>Sesame Seed Oil</td><td>Peppermint Oil</td><td>Clove Oil</td><td>Garlic Oil</td><td>Neem Extract</td></tr>
+          <tr><td>L-Carnitine</td><td>L-Arginine</td><td>L-Citrulline</td><td>L-Lysine</td><td>L-Methionine</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pagination" id="pagination"></div>
+  </div>
+</section>
+
+<!-- ── FOOTER ──────────────────────────────────────────────── -->
+<footer class="footer" id="contact">
+  <div class="blobs">
+    <div class="blob blob--m" style="opacity:.1"></div>
+    <div class="blob blob--p" style="opacity:.08"></div>
+  </div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <div class="footer-g">
+      <div class="fc fc-brand">
+        <img src="assets/img/quad-biotech-logo.png" alt="Quad Biotech">
+        <p>Quad Biotech Pvt. Ltd is the best softgel capsule manufacturer in India. Known for exceptional work, we are experts in creating high-end soft gel capsules that perfectly combine innovation and quality.</p>
+      </div>
+      <div class="fc">
+        <h4>Contact Us</h4>
+        <form class="fc-form" onsubmit="return handleFooterForm(event)" action="https://formsubmit.co/Capsoftmd1611@gmail.com" method="POST">
+          <input type="text" name="Name" placeholder="Name*" required>
+          <input type="text" name="Company" placeholder="Company Name">
+          <input type="email" name="Email" placeholder="Email*" required>
+          <input type="tel" name="Phone" placeholder="Telephone*" required>
+          <textarea name="Inquiry" placeholder="Inquiry"></textarea>
+          <input type="hidden" name="_subject" value="Footer contact — Quad Biotech website">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <button type="submit" class="sbtn">Send Message</button>
+        </form>
+      </div>
+      <div class="fc">
+        <h4>Quick Links</h4>
+        <div class="fc-links">
+          <a href="index.html">→ Home</a>
+          <a href="index.html#about">→ About Us</a>
+          <a href="softgel.html">→ Softgel Manufacturing</a>
+          <a href="index.html#bioactive">→ Branded Bioactive</a>
+          <a href="index.html#contact">→ Careers</a>
+          <a href="index.html#welcome-seo">→ Blogs</a>
+          <a href="index.html#contact">→ Contact Us</a>
+        </div>
+      </div>
+      <div class="fc fc-addr">
+        <h4>Our Address</h4>
+        <p><strong>Quad Biotech</strong>Shop no. 16, Ward no. 7, near Tulsidass Petrol Pump, Gharaunda, Haryana, India</p>
+        <p style="margin-bottom:8px"><strong>Feel free to contact us</strong></p>
+        <div class="fc-contacts">
+          <a href="mailto:Capsoftmd1611@gmail.com"><i class="fas fa-envelope" style="width:14px;color:var(--mint-mid)"></i> Capsoftmd1611@gmail.com</a>
+          <a href="tel:+918091920250"><i class="fas fa-phone" style="width:14px;color:var(--mint-mid)"></i> +91-8091920250</a>
+          <a href="tel:+919991119367"><i class="fas fa-mobile-screen" style="width:14px;color:var(--mint-mid)"></i> +91-9991119367</a>
+          <a href="tel:+919896265464"><i class="fas fa-phone-volume" style="width:14px;color:var(--mint-mid)"></i> +91-9896265464</a>
+        </div>
+        <p style="margin-bottom:8px"><strong>Follow Us</strong></p>
+        <div class="fc-soc">
+          <a href="#" class="sp">f</a>
+          <a href="#" class="sp">in</a>
+          <a href="#" class="sp">P</a>
+        </div>
+        <div class="qrc">
+          <div class="qrc__hd"><span class="pdot"></span> Quick Reach</div>
+          <div class="qrc-g">
+            <a href="tel:+918091920250" class="sbox bc"><span class="si"><i class="fas fa-phone"></i></span><span class="sl">+91-8091920250</span></a>
+            <a href="tel:+919991119367" class="sbox bm"><span class="si"><i class="fas fa-mobile-screen"></i></span><span class="sl">+91-9991119367</span></a>
+            <a href="https://wa.me/918091920250" target="_blank" rel="noopener noreferrer" class="sbox bw"><span class="si"><i class="fab fa-whatsapp"></i></span><span class="sl">WhatsApp</span></a>
+            <a href="mailto:Capsoftmd1611@gmail.com" class="sbox be"><span class="si"><i class="fas fa-envelope"></i></span><span class="sl">Email Us</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bar">© 2024 All Rights Reserved, Quad Biotech Pvt. Ltd | Developed by The Design Infotech</div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-bg" id="modalBg">
+  <div class="modal">
+    <button class="mcl" onclick="closeModal()" aria-label="Close"><i class="fas fa-xmark"></i></button>
+    <div class="mt">Get in Touch</div>
+    <div class="ms">Fill in the form and our team will get back to you within 24 hours.</div>
+    <form class="mform" onsubmit="return handleEnquiry(event)" action="https://formsubmit.co/Capsoftmd1611@gmail.com" method="POST">
+      <input type="text" name="Name" placeholder="Your Name*" required>
+      <input type="email" name="Email" placeholder="Email Address*" required>
+      <input type="tel" name="Phone" placeholder="Phone Number*" required>
+      <input type="text" name="Company" placeholder="Company Name">
+      <input type="text" id="modalInterest" name="Interest" placeholder="Interest / Product">
+      <select name="Requirement">
+        <option value="">Select Requirement</option>
+        <option>Softgel Manufacturing</option>
+        <option>Branded Bioactive</option>
+        <option>Export Inquiry</option>
+        <option>Custom Formulation</option>
+        <option>General Inquiry</option>
+      </select>
+      <textarea name="Message" placeholder="Your Message"></textarea>
+      <input type="hidden" name="_subject" value="New Enquiry — Quad Biotech website">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <button type="submit" class="msub">Send Enquiry →</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
